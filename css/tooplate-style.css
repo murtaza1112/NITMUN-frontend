@@ -83,7 +83,6 @@ section,
   background-blend-mode: multiply;
 }
 
-
 .myul {
   position: fixed;
   z-index: 1;
@@ -1221,6 +1220,7 @@ body.lb-disable-scrolling {
     width: 310px;
     float: left;
     text-align: right;
+    /* right: 150%; */
   }
 
   .direction-r {
@@ -1228,6 +1228,7 @@ body.lb-disable-scrolling {
     width: 310px;
     float: right;
     text-align: left;
+    /* left: 150%; */
   }
 
   .flag-wrapper {
@@ -1280,6 +1281,7 @@ body.lb-disable-scrolling {
   }
 }
 
+
 @media (min-width: 992px) {
   .timeline {
     width: 800px;
@@ -1299,5 +1301,37 @@ body.lb-disable-scrolling {
     width: 380px;
     float: right;
     text-align: left;
+  }
+}
+
+.moveRightAnimation {
+  animation: moveRight 1.25s ease-in forwards;
+}
+.moveLeftAnimation {
+  animation: moveLeft 1.25s ease-in forwards;
+}
+.direction .direction-l{
+  /* animation: moveLeft 5s ease-out; */
+  right: 150%;
+}
+.direction .direction-r{
+  /* animation: moveRight 5s ease-out; */
+  left: 150%;
+}
+@keyframes moveRight {
+  0% {
+    right: 150%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    left: 150%;
+  }
+  100% {
+    left: 0%;
   }
 }
