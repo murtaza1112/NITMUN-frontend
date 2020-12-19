@@ -1340,3 +1340,7 @@ body.lb-disable-scrolling {
     transform: translateX(0%);
   }
 }
+
+.fa.fa-clock-o{
+  padding-right:2px;
+}
