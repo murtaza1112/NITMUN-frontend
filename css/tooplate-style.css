@@ -1047,7 +1047,7 @@ body.lb-disable-scrolling {
     rgb(213, 213, 213) 92%,
     rgba(213, 213, 213, 0) 100%
   );
-  z-index: 5;
+  /* z-index: 5; */
 }
 
 .timeline li {
@@ -1281,7 +1281,6 @@ body.lb-disable-scrolling {
   }
 }
 
-
 @media (min-width: 992px) {
   .timeline {
     width: 800px;
@@ -1302,36 +1301,42 @@ body.lb-disable-scrolling {
     float: right;
     text-align: left;
   }
+
 }
 
 .moveRightAnimation {
-  animation: moveRight 1.25s ease-in forwards;
+  animation: moveRight 1.25s ease-out forwards;
 }
 .moveLeftAnimation {
-  animation: moveLeft 1.25s ease-in forwards;
+  animation: moveLeft 1.25s ease-out forwards;
 }
-.direction .direction-l{
+.direction.direction-l {
   /* animation: moveLeft 5s ease-out; */
-  right: 150%;
+  /* left: 150%; */
+  transform: translateX(-150%);
+  /* z-index: 10; */
+  /* color:red; */
 }
-.direction .direction-r{
+.direction.direction-r {
   /* animation: moveRight 5s ease-out; */
-  left: 150%;
+  /* right: 150%; */
+  transform: translateX(150%);
+  /* color:red; */
 }
 @keyframes moveRight {
   0% {
-    right: 150%;
+    transform: translateX(-150%);
   }
   100% {
-    right: 0%;
+    transform: translateX(0%);
   }
 }
 
 @keyframes moveLeft {
   0% {
-    left: 150%;
+    transform: translateX(150%);
   }
   100% {
-    left: 0%;
+    transform: translateX(0%);
   }
 }

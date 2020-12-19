@@ -12,10 +12,6 @@
 
     return (
       rect.bottom > 0 &&
-      rect.right > 0 &&
-      rect.left <
-        (window.innerWidth ||
-          document.documentElement.clientWidth) /* or $(window).width() */ &&
       rect.top <
         (window.innerHeight ||
           document.documentElement.clientHeight) /* or $(window).height() */
@@ -24,14 +20,15 @@
 
   function callbackFunc() {
     console.log("callbackFunc");
-    if (items[0].classList.contains("direction-r"))
-      items[0].classList.add("moveLeftAnimation");
-    else items[0].classList.add("moveRightAnimation");
-    if (items[1].classList.contains("direction-r"))
-      items[1].classList.add("moveLeftAnimation");
-    else items[1].classList.add("moveRightAnimation");
+    console.log(document.querySelectorAll(".direction .direction-r"));
+    // if (items[0].classList.contains("direction-r"))
+    //   items[0].classList.add("moveLeftAnimation");
+    // else items[0].classList.add("moveRightAnimation");
+    // if (items[1].classList.contains("direction-r"))
+    //   items[1].classList.add("moveLeftAnimation");
+    // else items[1].classList.add("moveRightAnimation");
     
-    for (var i = 2; i < items.length; i++) {
+    for (var i = 0; i < items.length; i++) {
       if (isElementInViewport(items[i])) {
         // console.log(`Element ${i + 1} is in viewport.`);
         console.log(items[i]);
