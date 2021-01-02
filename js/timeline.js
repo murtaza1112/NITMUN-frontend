@@ -4,7 +4,7 @@
   // define variables
   var items = document.querySelectorAll(".direction");
   var schedule = document.querySelector("#p5");
-  var scheduleLink = document.querySelector("#schedule")
+  var scheduleLink = document.querySelector("#schedule");
   // check if an element is in viewport
   // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
   function isElementInViewport(el) {
@@ -27,26 +27,27 @@
     // if (items[1].classList.contains("direction-r"))
     //   items[1].classList.add("moveLeftAnimation");
     // else items[1].classList.add("moveRightAnimation");
-    
+
     for (var i = 0; i < items.length; i++) {
       if (isElementInViewport(items[i])) {
         // console.log(`Element ${i + 1} is in viewport.`);
         console.log(items[i]);
-        if(items[i].classList.contains('direction-r'))
-        items[i].classList.add("moveLeftAnimation");
-        else
-        items[i].classList.add("moveRightAnimation");
+        if (items[i].classList.contains("direction-r"))
+          items[i].classList.add("moveLeftAnimation");
+        else items[i].classList.add("moveRightAnimation");
       }
     }
   }
-
 
   // listen for events
   document.addEventListener("load", callbackFunc);
   document.addEventListener("resize", callbackFunc);
   document.addEventListener("wheel", callbackFunc);
   scheduleLink.addEventListener("click", callbackFunc);
+  $(window).on("touchmove", callbackFunc);
 })();
+
+
 
 var ini = 0;
 const overLay = document.querySelector(".overlay");
@@ -57,23 +58,19 @@ function openNav() {
 }
 
 function closeNav() {
-  console.log("Nav closed.")
+  console.log("Nav closed.");
   // console.log(overLay);
   overLay.style.width = "0%";
 }
 
-function OpenCloseNav(){
+function OpenCloseNav() {
   ini ^= 1;
   console.log(ini);
-  if(ini)
-  openNav();
-  else
-  closeNav();
+  if (ini) openNav();
+  else closeNav();
 }
 
-$("#nav-icon1,.remove_on_click").click(
-  function () {
-    console.log("Hamburger has to change.");
-    $("#nav-icon1").toggleClass("open");
-  }
-);
+$("#nav-icon1,.remove_on_click").click(function () {
+  console.log("Hamburger has to change.");
+  $("#nav-icon1").toggleClass("open");
+});

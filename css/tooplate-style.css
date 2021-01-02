@@ -234,9 +234,9 @@ section,
   #nav-icon4 span {
     display: block;
     position: absolute;
-    height: 9px;
+    height: 8px;
     width: 100%;
-    background: #d3531a;
+    background: #ecebeb;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -284,6 +284,9 @@ section,
   }
 }
 
+.icon_padding{
+  padding: 2px;
+}
 /* animation for hanburger ends */
 .myul .icon:hover {
   opacity: 0.6;
