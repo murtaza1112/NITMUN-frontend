@@ -68,9 +68,11 @@ function OpenCloseNav() {
   console.log(ini);
   if (ini) openNav();
   else closeNav();
+  // change hamburger icon
+  $("#nav-icon1").toggleClass("open");
 }
 
 $("#nav-icon1,.remove_on_click").click(function () {
   console.log("Hamburger has to change.");
-  $("#nav-icon1").toggleClass("open");
+  // $("#nav-icon1").toggleClass("open");
 });
