@@ -40,9 +40,40 @@
     }
   }
 
+
   // listen for events
   document.addEventListener("load", callbackFunc);
   document.addEventListener("resize", callbackFunc);
   document.addEventListener("wheel", callbackFunc);
   scheduleLink.addEventListener("click", callbackFunc);
 })();
+
+var ini = 0;
+const overLay = document.querySelector(".overlay");
+function openNav() {
+  console.log("Nav opened.");
+  overLay.style.width = "100%";
+  // console.log(overLay);
+}
+
+function closeNav() {
+  console.log("Nav closed.")
+  // console.log(overLay);
+  overLay.style.width = "0%";
+}
+
+function OpenCloseNav(){
+  ini ^= 1;
+  console.log(ini);
+  if(ini)
+  openNav();
+  else
+  closeNav();
+}
+
+$("#nav-icon1,.remove_on_click").click(
+  function () {
+    console.log("Hamburger has to change.");
+    $("#nav-icon1").toggleClass("open");
+  }
+);

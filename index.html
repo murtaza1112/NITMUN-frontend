@@ -48,18 +48,84 @@ http://www.tooplate.com/view/2090-kinetic
           <div class="ct" id="t4">
             <div class="ct" id="t5">
               <section id="main_section">
-                <ul class="murtaza_navbar myul">
-                  <a href="#t1"><li class="icon fa fa-home" id="uno"></li></a>
-                  <a href="#t2"><li class="icon fa fa-user" id="dos"></li></a>
-                  <a href="#t5"
-                    ><li class="icon fa fa-calendar" id="schedule"></li
-                  ></a>
-                  <a href="#t3"><li class="icon fa fa-image" id="tres"></li></a>
+                <ul class="murtaza_navbar myul" >
+                  <!-- <div class="not_on_mobile"> -->
+                  <a href="#t1" 
+                    ><li class="icon" id="uno">
+                      <img class="main_image" src="img/NM.png"></img>
+                    </li>
+                    </a
+                  >
+                  <a href="#t5" class="not_on_mobile"
+                    ><li class="icon fa fa-calendar" id="schedule" onclick="closeNav()">
+                      ABOUT NITMUN
+                    </li>
+                  </a>
+                  <a href="#t2" class="not_on_mobile"
+                    ><li class="icon fa fa-user" id="dos">REGISTER</li></a
+                  >
+                  <a href="#t3" class="not_on_mobile"
+                    ><li class="icon fa fa-image" id="tres">GALLERY</li></a
+                  >
 
-                  <a href="#t4"
-                    ><li class="icon fa fa-phone" id="cuatro"></li
-                  ></a>
+                  <a href="#t4" class="not_on_mobile"
+                    ><li class="icon fa fa-phone" id="cuatro">ABOUT US</li></a
+                  >
+                  <div id="myNav">
+                    <li class="icon hamburger-font-increase" onclick="OpenCloseNav()">
+                      <div id="nav-icon1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                      </li>
+                    <div class="overlay">
+                      <!-- <a
+                        href="javascript:void(0)"
+                        class="closebtn"
+                        onclick="closeNav()">
+                        <div id="nav-icon1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                      </a> -->
+                        
+                      <div class="overlay-content">
+                        <a href="#t1" 
+                          ><li class="icon remove_on_click" id="uno" onclick="OpenCloseNav()">
+                          <img class="main_image-1" src="img/NM.png"></img>
+                        </li>
+                        </a>
+                        <a href="#t5" 
+                          ><li class="icon remove_on_click fa fa-calendar" id="schedule" onclick="OpenCloseNav()">
+                            ABOUT NITMUN
+                          </li>
+                        </a>
+                        <a href="#t2" 
+                          ><li class="icon remove_on_click fa fa-user" id="dos" onclick="OpenCloseNav()">REGISTER</li></a
+                        >
+                        <a href="#t3" 
+                          ><li class="icon remove_on_click fa fa-image" id="tres" onclick="OpenCloseNav()">
+                            GALLERY
+                          </li></a
+                        >
+
+                        <a href="#t4" 
+                          ><li class="icon remove_on_click fa fa-phone" id="cuatro" onclick="OpenCloseNav()">
+                            ABOUT US
+                          </li></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- </div> -->
+                 
                 </ul>
+
+                <!-- mobile navbar -->
+                 
+
                 <div class="page" id="p1">
                   <li class="icon fa fa-home">
                     <span class="title">Welcome To</span>
@@ -277,7 +343,9 @@ http://www.tooplate.com/view/2090-kinetic
                             <span class="hexa"></span>
                             <span class="flag">Socials</span>
                             <span class="time-wrapper"
-                              ><span class="time"><i class="fa fa-clock-o"></i>6:00 PM</span></span
+                              ><span class="time"
+                                ><i class="fa fa-clock-o"></i>6:00 PM</span
+                              ></span
                             >
                           </div>
                         </div>
@@ -301,7 +369,9 @@ http://www.tooplate.com/view/2090-kinetic
                             <span class="hexa"></span>
                             <span class="flag">Inaugruation</span>
                             <span class="time-wrapper"
-                              ><span class="time"><i class="fa fa-clock-o"></i>9:30 AM</span></span
+                              ><span class="time"
+                                ><i class="fa fa-clock-o"></i>9:30 AM</span
+                              ></span
                             >
                           </div>
                         </div>
@@ -314,7 +384,9 @@ http://www.tooplate.com/view/2090-kinetic
                             <span class="hexa"></span>
                             <span class="flag">Roll Call</span>
                             <span class="time-wrapper"
-                              ><span class="time"><i class="fa fa-clock-o"></i>10:00 AM</span></span
+                              ><span class="time"
+                                ><i class="fa fa-clock-o"></i>10:00 AM</span
+                              ></span
                             >
                           </div>
                         </div>
@@ -326,7 +398,9 @@ http://www.tooplate.com/view/2090-kinetic
                             <span class="hexa"></span>
                             <span class="flag">Lunch Break</span>
                             <span class="time-wrapper"
-                              ><span class="time"><i class="fa fa-clock-o"></i>2:00 PM</span></span
+                              ><span class="time"
+                                ><i class="fa fa-clock-o"></i>2:00 PM</span
+                              ></span
                             >
                           </div>
                         </div>
@@ -338,7 +412,9 @@ http://www.tooplate.com/view/2090-kinetic
                             <span class="hexa"></span>
                             <span class="flag">Commitee Resumes</span>
                             <span class="time-wrapper"
-                              ><span class="time"><i class="fa fa-clock-o"></i>3:00 PM</span></span
+                              ><span class="time"
+                                ><i class="fa fa-clock-o"></i>3:00 PM</span
+                              ></span
                             >
                           </div>
                         </div>
@@ -350,7 +426,9 @@ http://www.tooplate.com/view/2090-kinetic
                             <span class="hexa"></span>
                             <span class="flag">Commitee Suspended</span>
                             <span class="time-wrapper"
-                              ><span class="time"><i class="fa fa-clock-o"></i>7:00 PM</span></span
+                              ><span class="time"
+                                ><i class="fa fa-clock-o"></i>7:00 PM</span
+                              ></span
                             >
                           </div>
                         </div>
@@ -375,7 +453,9 @@ http://www.tooplate.com/view/2090-kinetic
                             <span class="hexa"></span>
                             <span class="flag">Commitee Resumes</span>
                             <span class="time-wrapper">
-                              <span class="time"><i class="fa fa-clock-o"></i>9:00 AM</span>
+                              <span class="time"
+                                ><i class="fa fa-clock-o"></i>9:00 AM</span
+                              >
                             </span>
                           </div>
                         </div>
@@ -387,7 +467,9 @@ http://www.tooplate.com/view/2090-kinetic
                             <span class="hexa"></span>
                             <span class="flag">Lunch Break</span>
                             <span class="time-wrapper"
-                              ><span class="time"><i class="fa fa-clock-o"></i>1:30 PM</span></span
+                              ><span class="time"
+                                ><i class="fa fa-clock-o"></i>1:30 PM</span
+                              ></span
                             >
                           </div>
                         </div>
@@ -399,7 +481,9 @@ http://www.tooplate.com/view/2090-kinetic
                             <span class="hexa"></span>
                             <span class="flag">Commitee Resumes</span>
                             <span class="time-wrapper"
-                              ><span class="time"><i class="fa fa-clock-o"></i>2:30 AM</span></span
+                              ><span class="time"
+                                ><i class="fa fa-clock-o"></i>2:30 AM</span
+                              ></span
                             >
                           </div>
                         </div>
@@ -411,7 +495,9 @@ http://www.tooplate.com/view/2090-kinetic
                             <span class="hexa"></span>
                             <span class="flag">Commitee Suspended</span>
                             <span class="time-wrapper"
-                              ><span class="time"><i class="fa fa-clock-o"></i>7:00 PM</span></span
+                              ><span class="time"
+                                ><i class="fa fa-clock-o"></i>7:00 PM</span
+                              ></span
                             >
                           </div>
                         </div>
@@ -423,7 +509,9 @@ http://www.tooplate.com/view/2090-kinetic
                             <span class="hexa"></span>
                             <span class="flag">Closing Ceremony</span>
                             <span class="time-wrapper"
-                              ><span class="time"><i class="fa fa-clock-o"></i>7:15 AM</span></span
+                              ><span class="time"
+                                ><i class="fa fa-clock-o"></i>7:15 AM</span
+                              ></span
                             >
                           </div>
                         </div>
@@ -435,7 +523,9 @@ http://www.tooplate.com/view/2090-kinetic
                             <span class="hexa"></span>
                             <span class="flag">Felicitation Ceremony</span>
                             <span class="time-wrapper"
-                              ><span class="time"><i class="fa fa-clock-o"></i>7:30 PM</span></span
+                              ><span class="time"
+                                ><i class="fa fa-clock-o"></i>7:30 PM</span
+                              ></span
                             >
                           </div>
                         </div>
