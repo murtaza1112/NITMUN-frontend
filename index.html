@@ -20,7 +20,9 @@ http://www.tooplate.com/view/2090-kinetic
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" />
+     -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
       rel="stylesheet"
@@ -587,8 +589,69 @@ http://www.tooplate.com/view/2090-kinetic
     <p>Architect & Engineer</p>
   </div> -->
                                   </li>
-                  <li class="icon fa fa-desktop"><span class="title">Tutorials</span></li>
+                  <li class="icon fa fa-desktop"><span class="title">Tutorials</span>
+                  <div class="container">
+                  <div class="row videos_container">
+                    <div class="col-lg-6 video_left_container">
+                    <iframe class="ytvideo" height="500px" width="100%" src="https://www.youtube.com/embed/yrxGYzPSyVg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
+                   <div class="col-sm-12 col-lg-6 video_right_container">
+                     <div class="row">
+                        <div class="col-6 video_card">
+                          <div class="inside_video_container" onclick="videoSwitch(0)">
+                          <img src="img/rollcall.jpg" width="100%"></img>
+                          <div class="video_title">
+                            Roll Call
+                          </div>
+                          </div>
+                        </div>
+                        <div class="col-6 video_card">
+                          <div class="inside_video_container" onclick="videoSwitch(1)">
+                          <img src="img/points.jpg" width="100%"></img>
+                          <div class="video_title">
+                            Points
+                          </div>
+                          </div>
+                        </div>
+                        <div class="col-6 video_card">
+                          <div class="inside_video_container" onclick="videoSwitch(2)">
+                          <img src="img/motions.jpg" width="100%"></img>
+                          <div class="video_title">
+                            Motions
+                          </div>
+                          </div>
+                        </div>
+                        <div class="col-6 video_card">
+                          <div class="inside_video_container" onclick="videoSwitch(3)">
+                          <img src="img/gsl.jpg" width="100%"></img>
+                          <div class="video_title">
+                            General Speaker List
+                          </div>
+                          </div>
+                        </div>
+                        <div class="col-6 video_card">
+                          <div class="inside_video_container" onclick="videoSwitch(4)">
+                          <img src="img/voting.jpg" width="100%"></img>
+                          <div class="video_title">
+                            Formal And Informal Voting
+                          </div>
+                          </div>
+                        </div>
+                        <div class="col-6 video_card">
+                          <div class="inside_video_container" onclick="videoSwitch(5)">
+                          <img src="img/munc.jpg" width="100%"></img>
+                          <div class="video_title">
+                            Moderated And Unmoderated Caucus
+                          </div>
+                          </div>
+                        </div>
+
+                     </div>
+                   </div>
+                   </div>
+                   </div>
+                  </li>
+                  
                 </div>
                 <!-- <p class="credit">LC</p> -->
               </section>
