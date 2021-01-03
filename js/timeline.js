@@ -47,8 +47,6 @@
   $(window).on("touchmove", callbackFunc);
 })();
 
-
-
 var ini = 0;
 const overLay = document.querySelector(".overlay");
 function openNav() {
@@ -76,3 +74,18 @@ $("#nav-icon1,.remove_on_click").click(function () {
   console.log("Hamburger has to change.");
   // $("#nav-icon1").toggleClass("open");
 });
+
+var urls = [
+  "https://www.youtube.com/embed/yrxGYzPSyVg",
+  "https://www.youtube.com/embed/QAptazmaths",
+  "https://www.youtube.com/embed/PTHAZalRWEM",
+  "https://www.youtube.com/embed/vW8BzlCdXo4",
+  "https://www.youtube.com/embed/kLgd2612Vtc",
+  "https://www.youtube.com/embed/upBwLdMdgDg",
+];
+var youtubeVideo = document.querySelector(".ytvideo");
+function videoSwitch(Val) {
+  console.log(youtubeVideo);
+  youtubeVideo.src = urls[Val];
+  // console.log(videoCards[Val]);
+}
