@@ -49,9 +49,11 @@ section,
 
 #p1 {
   left: 0;
-  background-image: url(../img/home-bg.png);
+  /* background-image: url(../img/home-bg.png); */
+  background-image: url(../img/black_bg2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 #p2 {
