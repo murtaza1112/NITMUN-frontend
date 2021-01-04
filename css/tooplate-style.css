@@ -33,7 +33,7 @@ section,
   transition: all 1s cubic-bezier(0.5, -0.005, 0.2, 1) !important;
   -webkit-transition: all 1s cubic-bezier(0.5, -0.005, 0.2, 1) !important;
   color: #fff;
-  background-image: url(../img/home-bg.png);
+  background-image: url(../img/black_bg2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -49,7 +49,7 @@ section,
 
 #p1 {
   left: 0;
-  background-image: url(../img/home-bg.png);
+  background-image: url(../img/black_bg2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
