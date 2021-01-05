@@ -508,4 +508,17 @@
 }));
 
 
-
+(function ($) {
+	/**
+   * Countdown
+   */
+	$('.countdown__module').each(function () {
+		var self = $(this),
+			    _date = self.attr('data-date'),
+			    _strf = self.html();
+		self.countdown(_date, function (event) {
+			self.html(event.strftime(_strf));
+		}).removeClass("hide");
+	});
+	
+})(jQuery);
