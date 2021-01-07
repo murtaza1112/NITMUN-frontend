@@ -140,7 +140,7 @@ preferenceOne.addEventListener("change", changePreference(preferenceOne));
 preferenceTwo.addEventListener("change", changePreference(preferenceTwo));
 preferenceThree.addEventListener("change", changePreference(preferenceThree));
 
-$("input").focus(function () {
-  // console.log("Input focused.",this)
-  // $("span").css("display", "inline").fadeOut(2000);
-}); 
+// $("input").focus(function () {
+//   // console.log("Input focused.",this)
+//   // $("span").css("display", "inline").fadeOut(2000);
+// }); 
