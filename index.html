@@ -27,7 +27,7 @@ http://www.tooplate.com/view/2090-kinetic
       href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css" /> -->
     <link rel="stylesheet" href="css/fontAwesome.css" />
     <link rel="stylesheet" href="css/tooplate-style.css" />
     <link href="css/ihover.css" rel="stylesheet">
@@ -152,12 +152,200 @@ http://www.tooplate.com/view/2090-kinetic
                 <div class="page" id="p2">
                   <li class="icon fa fa-user">
                     <span class="title">Registration Form</span>
-                    <div class="container">
-                      <div class="row">
-                       
+                  </li>
+
+                  <div class="container">
+                      <div class="row form_row">
+
+                        <nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Apply As Delegate</a>
+    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Apply As IP</a>
+  </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                                <form class="outside_form">
+
+                          <div class="form-group">
+                            <label class="form-label" for="exampleFormControlInput1">Name</label>
+                            <input type="text" class="form-control shadow-none" id="exampleFormControlInput1" placeholder="Name">
+                          </div>
+
+                          <div class="form-group">
+                            <label class="form-label" for="exampleFormControlInput1">Email</label>
+                            <input type="email" class="form-control shadow-none" id="exampleFormControlInput1" placeholder="Email">
+                          </div>
+
+                          <div class="form-group">
+                            <label class="form-label" for="exampleFormControlInput1">Phone Number</label>
+                            <input type="text" class="form-control shadow-none" id="exampleFormControlInput1" placeholder="Phone Number">
+                          </div>
+
+                          <div class="form-group">
+                            <label class="form-label" for="exampleFormControlInput1">College</label>
+                            <input type="email" class="form-control shadow-none" id="exampleFormControlInput1" placeholder="College">
+                          </div>
+
+                          <div class="form-text">
+                            Preference-1
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label" for="preference1">Commitee</label>
+                            <select class="form-control shadow-none" id="preference1" onchange='changePreference(this)'>
+                              <option>DISEC</option>
+                              <option>UNSC</option>
+                              <option>AIPPM</option>
+                            </select>
+                          </div>
+                          
+                          <div class="form-group">
+                            <label class="form-label label-1" for="preference1">Delegate</label>
+                            <select class="form-control shadow-none" id="preference-options1">
+                            
+                            </select>
+                          </div>
+
+                          <div class="form-text">
+                            Preference-2
+                          </div>
+
+                          <div class="form-group">
+                            <label class="form-label" for="preference2">Commitee</label>
+                            <select class="form-control shadow-none" id="preference2" onchange='changePreference(this)'>
+                              <option>DISEC</option>
+                              <option>UNSC</option>
+                              <option>AIPPM</option>
+                            </select>
+                          </div>
+                          
+                          <div class="form-group">
+                            <label class="form-label  label-2" for="preference2">Delegate</label>
+                            <select class="form-control shadow-none" id="preference-options2" >
+                            </select>
+                          </div>
+
+                          <div class="form-text">
+                            Preference-3
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label" for="preference3">Commitee</label>
+                            <select class="form-control shadow-none" id="preference3" onchange='changePreference(this)'>
+                              <option>DISEC</option>
+                              <option>UNSC</option>
+                              <option>AIPPM</option>
+                            </select>
+                          </div>
+                          
+                          <div class="form-group">
+                            <label class="form-label label-3" for="preference3">Delegate</label>
+                            <select class="form-control shadow-none" id="preference-options3" >
+                            </select>
+                          </div>
+
+
+
+                          <div class="form-group">
+                            <label class="form-label" for="exampleFormControlTextarea1">Previous Experiences</label>
+                            <textarea class="form-control shadow-none" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+
+                          <button type="submit" class="submit-button btn btn-block btn-secondary">Submit</button>
+
+                        </form>
+
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+                              <form class="outside_form">
+                                      <div class="form-group">
+                                        <label class="form-label" for="exampleFormControlInput1">Name</label>
+                                        <input type="text" class="form-control shadow-none" id="exampleFormControlInput1" placeholder="Name">
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label class="form-label" for="exampleFormControlInput1">Email</label>
+                                        <input type="email" class="form-control shadow-none" id="exampleFormControlInput1" placeholder="Email">
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label class="form-label" for="exampleFormControlInput1">Phone Number</label>
+                                        <input type="text" class="form-control shadow-none" id="exampleFormControlInput1" placeholder="Phone Number">
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label class="form-label" for="exampleFormControlInput1">College</label>
+                                        <input type="email" class="form-control shadow-none" id="exampleFormControlInput1" placeholder="College">
+                                      </div>
+
+                                      <div class="form-text">
+                                        Preference-1
+                                      </div>
+                                      <div class="form-group">
+                                        <label class="form-label" for="preference4">Commitee</label>
+                                        <select class="form-control shadow-none" id="preference4" onchange='changePreference(this)'>
+                                          <option>Journalist</option>
+                                          <option>Photographer</option>
+                                        </select>
+                                      </div>
+                                      
+                                      <div class="form-group">
+                                        <label class="form-label label-4" for="preference4">Delegate</label>
+                                        <select class="form-control shadow-none" id="preference-options4">
+                                        </select>
+                                      </div>
+
+                                      <div class="form-text">
+                                        Preference-2
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label class="form-label" for="preference5">Commitee</label>
+                                        <select class="form-control shadow-none" id="preference5" onchange='changePreference(this)'>
+                                          Î<option>Journalist</option>
+                                          <option>Photographer</option>
+                                        </select>
+                                      </div>
+                                      
+                                      <div class="form-group">
+                                        <label class="form-label  label-2" for="preference5">Delegate</label>
+                                        <select class="form-control shadow-none" id="preference-options5" >
+                                        </select>
+                                      </div>
+
+                                      <div class="form-text">
+                                        Preference-3
+                                      </div>
+                                      <div class="form-group">
+                                        <label class="form-label" for="preference6">Commitee</label>
+                                        <select class="form-control shadow-none" id="preference6" onchange='changePreference(this)'>
+                                           <option>Journalist</option>
+                                          <option>Photographer</option>
+                                        </select>
+                                      </div>
+                                      
+                                      <div class="form-group">
+                                        <label class="form-label label-6" for="preference6">Delegate</label>
+                                        <select class="form-control shadow-none" id="preference-options6" >
+                                        </select>
+                                      </div>
+
+
+
+                                      <div class="form-group">
+                                        <label class="form-label" for="exampleFormControlTextarea1">Previous Experiences</label>
+                                        <textarea class="form-control shadow-none" id="exampleFormControlTextarea1"></textarea>
+                                      </div>
+
+                                      <button type="submit" class="submit-button btn btn-block btn-secondary">Submit</button>
+
+                                    </form>
+                            </div>
+                          </div>
                       </div>
                     </div>
-                  </li>
+
                 </div>
                 <div class="page" id="p3">
                   <li class="icon fa fa-image">
@@ -222,7 +410,7 @@ http://www.tooplate.com/view/2090-kinetic
                                 <input
                                   name="name"
                                   type="text"
-                                  class="form-control"
+                                  class="form-control shadow-none"
                                   id="name"
                                   placeholder="Your Name"
                                   required
@@ -234,7 +422,7 @@ http://www.tooplate.com/view/2090-kinetic
                                 <input
                                   name="email"
                                   type="email"
-                                  class="form-control"
+                                  class="form-control shadow-none"
                                   id="email"
                                   placeholder="Email"
                                   required
@@ -246,7 +434,7 @@ http://www.tooplate.com/view/2090-kinetic
                                 <textarea
                                   name="message"
                                   rows="6"
-                                  class="form-control"
+                                  class="form-control shadow-none"
                                   id="message"
                                   placeholder="Message"
                                   required
@@ -787,8 +975,11 @@ http://www.tooplate.com/view/2090-kinetic
           '<script src="js/vendor/jquery-1.11.2.min.js"><\/script>'
         );
     </script>
-
-    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script type="text/javascript" src="assets/vendors/jquery.countdown/jquery.countdown.min.js"></script>
 
     <script src="js/plugins.js"></script>

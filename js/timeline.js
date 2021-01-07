@@ -19,8 +19,8 @@
   }
 
   function callbackFunc() {
-    console.log("callbackFunc");
-    console.log(document.querySelectorAll(".direction .direction-r"));
+    // console.log("callbackFunc");
+    // console.log(document.querySelectorAll(".direction .direction-r"));
     // if (items[0].classList.contains("direction-r"))
     //   items[0].classList.add("moveLeftAnimation");
     // else items[0].classList.add("moveRightAnimation");
@@ -50,7 +50,7 @@
 var ini = 0;
 const overLay = document.querySelector(".overlay");
 function openNav() {
-  console.log("Nav opened.");
+  // console.log("Nav opened.");
   overLay.style.width = "100%";
   // console.log(overLay);
 }
@@ -89,3 +89,54 @@ function videoSwitch(Val) {
   youtubeVideo.src = urls[Val];
   // console.log(videoCards[Val]);
 }
+
+// form JS
+
+var Options = {
+  UNSC: ["UNSC", "India", "China", "Korea"],
+  AIPPM: ["AIPPM", "Modi", "Gandhi", "Murtaza"],
+  DISEC: ["DISEC", "United States", "China", "United Kingdom"],
+  Journalist: ["DISEC", "United States", "China", "United Kingdom"],
+  Photographer: ["DISEC", "United States", "China", "United Kingdom"],
+};
+
+var preferenceOne = document.querySelector("#preference1");
+preferenceTwo = document.querySelector("#preference2");
+preferenceThree = document.querySelector("#preference3");
+
+var preferenceOptions = new Array(
+  document.querySelector("#preference-options1"),
+  document.querySelector("#preference-options2"),
+  document.querySelector("#preference-options3")
+);
+
+function changePreference(calledSelectTag) {
+  var { value, id } = calledSelectTag;
+  // console.log(calledSelectTag,value,id);
+  // get which form called
+  id = id.charAt(id.length - 1);
+  id--;
+  
+  const myNode = preferenceOptions[id];
+  while (myNode.firstChild) {
+    // console.log(myNode)
+    myNode.removeChild(myNode.lastChild);
+  }
+
+  console.log(calledSelectTag, value, id);
+
+  // change text value in label
+  console.log(`.label-${id+1}`)
+  var currentLabel = document.querySelector(`.label-${id+1}`);
+  if(value==='AIPPM'){
+    currentLabel.innerText = 'Party'
+  }else{
+    currentLabel.innerText = "Country";
+  }
+  Options[value].forEach((value) => preferenceOptions[id].insertAdjacentHTML('beforeend',`<option>${value}</option>`));
+}
+
+preferenceOne.addEventListener("change", changePreference(preferenceOne));
+preferenceTwo.addEventListener("change", changePreference(preferenceTwo));
+preferenceThree.addEventListener("change", changePreference(preferenceThree));
+
