@@ -664,7 +664,13 @@ a {
   font-weight: 300;
   margin-bottom: 60px;
 }
+#p5 .project-item img {
+  transition: transform .2s;
+}
 
+#p5 .project-item img:hover {
+  transform: scale(1.5);
+}
 @media (max-width: 600px) {
   /* ul {
     padding-top: 50%!important;
