@@ -72,6 +72,11 @@ section,
   background-position: center;
 }
 
+#p3 img {
+  width: auto;
+  height: 300px;
+}
+
 #p4 {
   left: 300%;
   background-image: url(../img/black_bg_9.jpg);
