@@ -58,31 +58,34 @@ section,
 
 #p2 {
   left: 100%;
-  background-image: url(../img/about-bg.png);
+  background-image: url(../img/black_bg_7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 #p3 {
   left: 200%;
-  background-image: url(../img/gallery-bg.png);
+  background-image: url(../img/black_bg_9.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 #p4 {
   left: 300%;
-  background-image: url(../img/contact-bg.png);
+  background-image: url(../img/black_bg_9.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 #p5 {
   left: 400%;
-  background: url(../img/item-05.jpg) rgb(22, 77, 109);
+  background-image: url(../img/black_bg_7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: multiply;
+  background-position: center;
 }
 
 .myul {
@@ -308,33 +311,47 @@ section,
 }
 
 #t2:target #dos {
-  color: #9f7f5f;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
+  /* color: #9f7f5f; */
+  font-weight: bold;
+  -moz-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  -webkit-transition: 0.4s ease-in;
+  border-bottom: #ffffff 1px solid;
 }
 
 #t3:target #tres {
-  color: #8aaa75;
+  /* color: #8aaa75; */
+  font-weight: bold;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
+  border-bottom: #ffffff 1px solid;
 }
 
 #t4:target #cuatro {
-  color: #8575aa;
+  /* color: #8575aa; */
+  font-weight: bold;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
+  border-bottom: #ffffff 1px solid;
 }
 
 #t5:target #schedule {
-  color: rgb(106, 141, 161);
+  /* color: rgb(106, 141, 161); */
+  font-weight: bold;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
+  border-bottom: #ffffff 1px solid;
 }
 
+#dos:hover,
+#tres:hover,
+#cuatro:hover,
+#schedule:hover{
+  border-bottom: #ffffff 1px solid;
+}
 /* ul {
   padding-top: 20%;
   position: fixed;
