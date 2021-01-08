@@ -1769,3 +1769,33 @@ input::-webkit-input-placeholder {
 .not_on_mobile{
   font-family: 'Alegreya', serif;
 }
+
+footer {
+  color: grey;
+  background-color: grey;
+}
+
+footer ol {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+footer i {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 15px;
+  width: 34px;
+  background-color: #cdcdcd;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 34px;
+  color: black;
+}
+
+footer i:hover {
+  background-color: #63adcc;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+}
