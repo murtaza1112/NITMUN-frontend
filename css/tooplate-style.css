@@ -1559,7 +1559,7 @@ body.lb-disable-scrolling {
 
 .video_title {
   position: relative;
-  /* top: -8px; */
+  top: -11px;
   color: #4a4747;
   font-size: 20px;
   font-family: "EB Garamond", serif;
@@ -1573,12 +1573,12 @@ body.lb-disable-scrolling {
   /* margin:3px; */
 }
 .video_card img{
-  /* vertical-align: baseline; */
+  vertical-align: baseline;
 }
 .inside_video_container {
   background-color: white;
   margin: 8px;
-  /* border-radius: 13px; */
+  border-radius: 13px;
   /* padding: 8px; */
   cursor: pointer;
 }
