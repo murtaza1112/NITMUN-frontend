@@ -72,6 +72,11 @@ section,
   background-position: center;
 }
 
+#p3 img {
+  width: auto;
+  height: 300px;
+}
+
 #p4 {
   left: 300%;
   background-image: url(../img/black_bg_9.jpg);
@@ -544,6 +549,7 @@ a {
 #p3 .project-item img {
   width: 100%;
   overflow: hidden;
+  object-fit: cover;
 }
 
 #p3 .last-project {
