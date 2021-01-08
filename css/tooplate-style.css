@@ -1084,7 +1084,7 @@ body.lb-disable-scrolling {
   left: 0;
   width: 0;
   height: 0;
-  border-bottom: 30px solid #30343C;
+  border-bottom: 30px solid #30343c;
   border-left: 52px solid transparent;
   border-right: 52px solid transparent;
   top: -30px;
@@ -1098,7 +1098,7 @@ body.lb-disable-scrolling {
   height: 0;
   border-left: 52px solid transparent;
   border-right: 52px solid transparent;
-  border-top: 30px solid #30343C;
+  border-top: 30px solid #30343c;
   bottom: -30px;
 }
 
@@ -1106,7 +1106,7 @@ body.lb-disable-scrolling {
   /* width: 16px;
   height: 10px;
   position: absolute; */
-  background: #30343C;
+  background: #30343c;
   z-index: 5;
   /* left: 0; */
   /* right: 0; */
@@ -1259,7 +1259,7 @@ body.lb-disable-scrolling {
   width: 16px;
   height: 10px;
   position: absolute;
-  background: #30343C;
+  background: #30343c;
   z-index: 5;
   left: 0;
   right: 0;
@@ -1270,7 +1270,7 @@ body.lb-disable-scrolling {
 }
 
 .timeline .hexa:before {
-  border-bottom: 4px solid #30343C;
+  border-bottom: 4px solid #30343c;
   border-left-width: 8px;
   border-right-width: 8px;
   top: -4px;
@@ -1279,7 +1279,7 @@ body.lb-disable-scrolling {
 .timeline .hexa:after {
   border-left-width: 8px;
   border-right-width: 8px;
-  border-top: 4px solid #30343C;
+  border-top: 4px solid #30343c;
   bottom: -4px;
 }
 
@@ -1355,7 +1355,7 @@ body.lb-disable-scrolling {
 }
 
 .time {
-  background: #30343C;
+  background: #30343c;
   display: inline-block;
   padding: 8px;
 }
@@ -1553,18 +1553,17 @@ body.lb-disable-scrolling {
   width: 100%;
 }
 .video_right_container {
-  border-radius: 10px;
+  /* border-radius: 10px; */
   /* background-color : white; */
 }
 
 .video_title {
+  position: relative;
+  /* top: -8px; */
   color: #4a4747;
   font-size: 20px;
-  font-family: 'EB Garamond', serif;
-  /* font-family: "Goldman", cursive; */
-  /* font-family: "Red Rose", cursive; */
-  padding:3px;
-
+  font-family: "EB Garamond", serif;
+  padding: 3px;
 }
 
 .video_card {
@@ -1573,10 +1572,13 @@ body.lb-disable-scrolling {
   /* background-color : white; */
   /* margin:3px; */
 }
+.video_card img{
+  /* vertical-align: baseline; */
+}
 .inside_video_container {
   background-color: white;
   margin: 8px;
-  border-radius: 13px;
+  /* border-radius: 13px; */
   /* padding: 8px; */
   cursor: pointer;
 }
@@ -1808,13 +1810,22 @@ footer i:hover {
 .project-item img {
   height: 350px;
 }
-.direction .flag{
-  color :#30343C;
-  font-family: 'Cinzel', serif;
+.direction .flag {
+  color: #30343c;
+  font-family: "Cinzel", serif;
   /* font-family: 'Vollkorn', serif; */
   font-size: 16px;
 }
 
 .ih-item.circle.effect3.colored .info {
-    background: #30343C !important;
+  background: #30343c !important;
+}
+
+.inside_video_container {
+  transition: transform 0.2s;
+}
+
+.inside_video_container:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
 }
