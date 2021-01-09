@@ -96,18 +96,24 @@ var Options = {
   UNSC: ["UNSC", "India", "China", "Korea"],
   AIPPM: ["AIPPM", "Modi", "Gandhi", "Murtaza"],
   DISEC: ["DISEC", "United States", "China", "United Kingdom"],
-  Journalist: ["DISEC", "United States", "China", "United Kingdom"],
-  Photographer: ["DISEC", "United States", "China", "United Kingdom"],
+  Journalist: ["Journalist", "United States", "China", "United Kingdom"],
+  Photographer: ["Photographer", "United States", "China", "United Kingdom"],
 };
 
 var preferenceOne = document.querySelector("#preference1");
-preferenceTwo = document.querySelector("#preference2");
-preferenceThree = document.querySelector("#preference3");
+    preferenceTwo = document.querySelector("#preference2");
+    preferenceThree = document.querySelector("#preference3");
+    preferenceFour = document.querySelector("#preference4");
+    preferenceFive = document.querySelector("#preference5");
+    preferenceSix = document.querySelector("#preference6");
 
 var preferenceOptions = new Array(
   document.querySelector("#preference-options1"),
   document.querySelector("#preference-options2"),
-  document.querySelector("#preference-options3")
+  document.querySelector("#preference-options3"),
+  document.querySelector("#preference-options4"),
+  document.querySelector("#preference-options5"),
+  document.querySelector("#preference-options6")
 );
 
 function changePreference(calledSelectTag) {
@@ -118,21 +124,27 @@ function changePreference(calledSelectTag) {
   id--;
 
   const myNode = preferenceOptions[id];
+
+  console.log(calledSelectTag, value, id);
+
   while (myNode.firstChild) {
     // console.log(myNode)
     myNode.removeChild(myNode.lastChild);
   }
 
-  console.log(calledSelectTag, value, id);
+  
 
   // change text value in label
   console.log(`.label-${id + 1}`);
   var currentLabel = document.querySelector(`.label-${id + 1}`);
   if (value === "AIPPM") {
     currentLabel.innerText = "Party";
-  } else {
+  } else if(value==="Journalist"){
+    currentLabel.innerText = "Publication";
+  }else {
     currentLabel.innerText = "Country";
   }
+  console.log(value);
   Options[value].forEach((value) =>
     preferenceOptions[id].insertAdjacentHTML(
       "beforeend",
@@ -144,11 +156,10 @@ function changePreference(calledSelectTag) {
 preferenceOne.addEventListener("change", changePreference(preferenceOne));
 preferenceTwo.addEventListener("change", changePreference(preferenceTwo));
 preferenceThree.addEventListener("change", changePreference(preferenceThree));
+preferenceThree.addEventListener("change", changePreference(preferenceFour));
+preferenceThree.addEventListener("change", changePreference(preferenceFive));
+preferenceThree.addEventListener("change", changePreference(preferenceSix));
 
-// $("input").focus(function () {
-//   // console.log("Input focused.",this)
-//   // $("span").css("display", "inline").fadeOut(2000);
-// });
 
 const aboutUs = document.querySelector("#p5");
 
