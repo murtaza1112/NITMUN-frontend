@@ -12,7 +12,7 @@ body {
 
 p {
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 23px;
 }
@@ -106,7 +106,8 @@ section,
   padding: 0;
   height: 10%;
   align-items: center;
-  background: #31333c;
+  /* background: #31333c; */
+  background-color: rgb(41 41 41);
 }
 .page {
   top: 10%;
@@ -132,7 +133,8 @@ section,
 #t3:target .myul,
 #t4:target .myul,
 #t5:target .myul {
-  background-color: rgba(48, 51, 60, 1);
+  /* background-color: rgba(48, 51, 60, 1); */
+  background-color: rgb(41 41 41);
 }
 
 .page#p1 {
@@ -163,7 +165,8 @@ section,
   width: 0%;
   z-index: 30;
   overflow-x: hidden;
-  background-color: rgb(60, 59, 63);
+  /* background-color: rgb(60, 59, 63); */
+  background-color: rgb(41 41 41);
   transition: 0.3s ease-in-out;
 }
 .main_image {
@@ -550,6 +553,7 @@ a {
   width: 100%;
   overflow: hidden;
   object-fit: cover;
+  border-radius: 12px;
 }
 
 #p3 .last-project {
@@ -646,7 +650,6 @@ a {
 }
 
 #p4 .uniquedivp4 h3 {
-  font-size: 150px;
   color: #8cc63f;
   line-height: 72px;
   font-weight: 900;
@@ -675,10 +678,9 @@ a {
 }
 
 #p4 .right-info {
-  background-color: #fff;
   padding: 20px;
-  color: #343434;
-  text-align: left;
+  color: #ffffff;
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -1511,10 +1513,10 @@ body.lb-disable-scrolling {
 }
 
 .moveRightAnimation {
-  animation: moveRight 1.25s ease-out forwards;
+  animation: moveRight 1s ease-out forwards;
 }
 .moveLeftAnimation {
-  animation: moveLeft 1.25s ease-out forwards;
+  animation: moveLeft 1s ease-out forwards;
 }
 .direction.direction-l {
   /* animation: moveLeft 5s ease-out; */
@@ -1889,19 +1891,18 @@ footer i:hover {
 /* dropdown navbar */
 
 .mydrop .mydropdown-content {
-    display: none;
-    cursor: pointer;
-    position: absolute;
-    background-color: #f9f9f9;
-    width: 250px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 10px;
-    text-align: center;
-    right: -26%;
-    top: 200%;
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+  text-align: center;
+  right: -26%;
+  top: 200%;
 }
-
 
 /* only for second page view dropdown */
 #t5:target .mydropnav:hover .mydropdown-content {
@@ -1909,16 +1910,14 @@ footer i:hover {
   display: block;
 }
 
-
 .mydrop .drop-value {
   line-height: 1.3;
   color: black;
   padding: 15px 15px;
 }
 
-
 .mydrop .drop-value:hover {
-  background-color: #31333c;
+  background-color: rgb(41 41 41);
   color: white;
 }
 
@@ -1933,23 +1932,24 @@ footer i:hover {
   border-right: 25px solid transparent;
   border-bottom: 25px solid #ffffff;
   position: absolute;
-  right: 98px;
+  right: 103px;
   top: -24px;
 }
 
-.mydrop .fa-caret-down{
+.mydrop .fa-caret-down {
   display: none;
 }
 
-#t5:target .mydrop .fa-caret-down{
+#t5:target .mydrop .fa-caret-down {
   display: inline-block;
 }
 
 /* mobile dropdown */
 
-.my-mobile-drop .my-mobile-dropdown-content {
-    display: none;
-    position: relative;
+.my-mobile-drop .my_mobile_dropdown_content {
+  display: none;
+  position: relative;
+  padding: 0 5px;
 }
 
 .my-mobile-drop .drop-value {
@@ -1958,14 +1958,82 @@ footer i:hover {
   padding: 15px 15px;
 }
 
-
-.my-mobile-drop .drop-value:hover {
-  background-color: #31333c;
-  color: white;
+.my-mobile-drop .make_visible {
+  display: block;
 }
 
 .mydropdown .fa-caret-down {
   padding-left: 10px;
 }
 
+.my-mobile-drop .mobile_value:hover {
+  border-bottom: #ffffff 1px solid;
+}
 
+.text-about-us {
+  text-align: center;
+  margin-bottom: 40px;
+}
+#p1 .title,
+#p2 .title,
+#p3 .title,
+#p4 .title,
+#p5 .title {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 60px;
+  text-shadow: 1px 1px 0px #797878;
+}
+
+#p4 .title {
+  text-align: center;
+}
+.icon_about_us {
+  font-size: 60px;
+  justify-content: center;
+  display: flex;
+}
+.about_nitmun_title {
+  margin-top: 60px;
+}
+
+@media (min-width: 992px) {
+  #p4 .uniquedivp4 h3 {
+    font-size: 144px;
+  }
+}
+
+@media (min-width: 768px) {
+  #p4 .uniquedivp4 h3 {
+    font-size: 109px;
+  }
+}
+
+@media (min-width: 546px) {
+  #p4 .uniquedivp4 h3 {
+    font-size: 80px;
+  }
+}
+
+.about_href {
+  color: #231c1c;
+  font-weight: 700;
+}
+
+.about_href:hover{
+  color: rgb(240, 235, 235);
+}
+
+.p-4 {
+    color: #d4d4d4;
+}
+
+.number_padding{
+  padding-left: 82px;
+}
+
+.footer_background{
+  background-color: rgb(41 41 41);
+}

@@ -152,21 +152,33 @@ preferenceThree.addEventListener("change", changePreference(preferenceThree));
 
 const aboutUs = document.querySelector("#p5");
 
+// hardcoded values
 function dropdownScroll(event) {
   console.log(event);
   var calledTag = event.getAttribute("arg");
-  console.log(calledTag)
+  console.log(calledTag);
   var height = 0;
-  if(calledTag==="about")
-  height = 0;
-  else if(calledTag==="committees")
-  height = 590;
-  else if(calledTag==="schedule")
-  height = 2080;
-  else if(calledTag==="secretariat")
-  height = 3800;
-  else if(calledTag==="tutorials")
-  height = 4920;
+
+  if (window.screen.width < 425) {
+    if (calledTag === "about") height = 0;
+    else if (calledTag === "committees") height = 1090;
+    else if (calledTag === "schedule") height = 3750;
+    else if (calledTag === "secretariat") height = 5800;
+    else if (calledTag === "tutorials") height = 7850;
+  } else if (window.screen.width < 760) {
+    if (calledTag === "about") height = 0;
+    else if (calledTag === "committees") height = 790;
+    else if (calledTag === "schedule") height = 3450;
+    else if (calledTag === "secretariat") height = 5600;
+    else if (calledTag === "tutorials") height = 7600;
+  } else {
+    if (calledTag === "about") height = 0;
+    else if (calledTag === "committees") height = 590;
+    else if (calledTag === "schedule") height = 2080;
+    else if (calledTag === "secretariat") height = 3800;
+    else if (calledTag === "tutorials") height = 4920;
+  }
+
   console.log(height);
 
   aboutUs.scrollTo({ top: height, behavior: "smooth" });
@@ -175,3 +187,9 @@ function dropdownScroll(event) {
 function addOrRemoveTag(element) {
   console.log(element);
 }
+
+$(".click_text").click(() => {
+  if ($(".my_mobile_dropdown_content").is(":hidden"))
+    $(".my_mobile_dropdown_content").slideDown(1900);
+  else $(".my_mobile_dropdown_content").slideUp(1900);
+});
