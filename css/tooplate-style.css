@@ -300,7 +300,7 @@ section,
 }
 /* animation for hanburger ends */
 .myul .icon:hover {
-  opacity: 0.6;
+  /* opacity: 0.6; */
 }
 
 #p1 .icon .title {
@@ -1750,7 +1750,6 @@ input::-webkit-input-placeholder {
   font-weight: 400;
 }
 
-
 #p2 .form-label {
   font-family: Poppins-Regular;
   color: #ffffff;
@@ -1768,7 +1767,7 @@ input::-webkit-input-placeholder {
 }
 
 #p2 .form-control:focus {
-  transition : 0.5s ease-out;
+  transition: 0.5s ease-out;
   border-bottom: 2px solid #ffffff;
 }
 
@@ -1851,7 +1850,7 @@ footer i:hover {
   color: rgb(232 59 59);
 }
 
-#p2 .submit_button{
+#p2 .submit_button {
   font-family: "Montserrat", sans-serif;
   display: inline-block;
   padding: 15px 25px;
@@ -1871,6 +1870,102 @@ footer i:hover {
   background-color: #ffffff;
   color: rgb(63, 61, 61);
 }
- #p2 .form-group {
-    margin-bottom: 2rem;
+#p2 .form-group {
+  margin-bottom: 2rem;
 }
+
+#p2 .form-icon {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0px;
+}
+
+#p2 .fa-user {
+  font-size: 60px;
+  padding-bottom: 10px;
+}
+
+/* dropdown navbar */
+
+.mydrop .mydropdown-content {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+    text-align: center;
+    right: -26%;
+    top: 200%;
+}
+
+
+/* only for second page view dropdown */
+#t5:target .mydropnav:hover .mydropdown-content {
+  transition: 1s ease-in-out;
+  display: block;
+}
+
+
+.mydrop .drop-value {
+  line-height: 1.3;
+  color: black;
+  padding: 15px 15px;
+}
+
+
+.mydrop .drop-value:hover {
+  background-color: #31333c;
+  color: white;
+}
+
+.mydropdown .fa-caret-down {
+  padding-left: 10px;
+}
+
+.mydrop .arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid #ffffff;
+  position: absolute;
+  right: 98px;
+  top: -24px;
+}
+
+.mydrop .fa-caret-down{
+  display: none;
+}
+
+#t5:target .mydrop .fa-caret-down{
+  display: inline-block;
+}
+
+/* mobile dropdown */
+
+.my-mobile-drop .my-mobile-dropdown-content {
+    display: none;
+    position: relative;
+}
+
+.my-mobile-drop .drop-value {
+  line-height: 1.3;
+  color: black;
+  padding: 15px 15px;
+}
+
+
+.my-mobile-drop .drop-value:hover {
+  background-color: #31333c;
+  color: white;
+}
+
+.mydropdown .fa-caret-down {
+  padding-left: 10px;
+}
+
+

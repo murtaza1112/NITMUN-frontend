@@ -116,7 +116,7 @@ function changePreference(calledSelectTag) {
   // get which form called
   id = id.charAt(id.length - 1);
   id--;
-  
+
   const myNode = preferenceOptions[id];
   while (myNode.firstChild) {
     // console.log(myNode)
@@ -126,14 +126,19 @@ function changePreference(calledSelectTag) {
   console.log(calledSelectTag, value, id);
 
   // change text value in label
-  console.log(`.label-${id+1}`)
-  var currentLabel = document.querySelector(`.label-${id+1}`);
-  if(value==='AIPPM'){
-    currentLabel.innerText = 'Party'
-  }else{
+  console.log(`.label-${id + 1}`);
+  var currentLabel = document.querySelector(`.label-${id + 1}`);
+  if (value === "AIPPM") {
+    currentLabel.innerText = "Party";
+  } else {
     currentLabel.innerText = "Country";
   }
-  Options[value].forEach((value) => preferenceOptions[id].insertAdjacentHTML('beforeend',`<option>${value}</option>`));
+  Options[value].forEach((value) =>
+    preferenceOptions[id].insertAdjacentHTML(
+      "beforeend",
+      `<option>${value}</option>`
+    )
+  );
 }
 
 preferenceOne.addEventListener("change", changePreference(preferenceOne));
@@ -143,4 +148,30 @@ preferenceThree.addEventListener("change", changePreference(preferenceThree));
 // $("input").focus(function () {
 //   // console.log("Input focused.",this)
 //   // $("span").css("display", "inline").fadeOut(2000);
-// }); 
+// });
+
+const aboutUs = document.querySelector("#p5");
+
+function dropdownScroll(event) {
+  console.log(event);
+  var calledTag = event.getAttribute("arg");
+  console.log(calledTag)
+  var height = 0;
+  if(calledTag==="about")
+  height = 0;
+  else if(calledTag==="committees")
+  height = 590;
+  else if(calledTag==="schedule")
+  height = 2080;
+  else if(calledTag==="secretariat")
+  height = 3800;
+  else if(calledTag==="tutorials")
+  height = 4920;
+  console.log(height);
+
+  aboutUs.scrollTo({ top: height, behavior: "smooth" });
+}
+
+function addOrRemoveTag(element) {
+  console.log(element);
+}

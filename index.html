@@ -68,9 +68,22 @@ http://www.tooplate.com/view/2090-kinetic
                     <img class="main_image" src="img/nitmun_9_white.png"></img>
                   </li>
                 </a>
-                <a href="#t5" class="not_on_mobile">
-                  <li class="icon" id="schedule" onclick="closeNav()">
-                    ABOUT NITMUN
+                <a href="#t5" class="not_on_mobile mydropnav">
+                  <li class="icon mydrop" id="schedule" onclick="closeNav()">
+                    <div>
+                      <span>
+                    <span class="mydropdown">ABOUT NITMUN</span>
+                    <i class="fa fa-caret-down"></i>
+                    </span>
+                    <div class="mydropdown-content">
+                      <div class="arrow-up"></div>
+                      <div class="drop-value" onclick="dropdownScroll(this)" arg="about">ABOUT</div>
+                      <div class="drop-value" onclick="dropdownScroll(this)" arg="committees">COMMITTEES</div>
+                      <div class="drop-value" onclick="dropdownScroll(this)" arg="schedule">SCHEDULE</div>
+                      <div class="drop-value" onclick="dropdownScroll(this)" arg="secretariat">SECRETARIAT</div>
+                      <div class="drop-value" onclick="dropdownScroll(this)" arg="tutorials">TUTORIALS</div>
+                    </div>
+                    </div>
                   </li>
                 </a>
 
@@ -104,8 +117,21 @@ http://www.tooplate.com/view/2090-kinetic
                       </div>
                       <div>
                         <a href="#t5">
-                          <li class="icon remove_on_click icon_padding" id="schedule" onclick="OpenCloseNav()">
-                            ABOUT NITMUN
+                          <li class="icon remove_on_click icon_padding" id="schedule">
+                             <div class="my-mobile-drop" onclick="addOrRemoveTag(my_mobile_dropdown_content)">
+                                <span>
+                              <span class="my-mobile_dropdown">ABOUT NITMUN</span>
+                              <i class="fa fa-caret-down"></i>
+                              </span>
+                              <div class="my_mobile_dropdown_content">
+                                <div class="arrow-up"></div>
+                                <div onclick="dropdownScroll(this)" arg="about">ABOUT</div>
+                                <div onclick="dropdownScroll(this)" arg="committees">COMMITTEES</div>
+                                <div onclick="dropdownScroll(this)" arg="schedule">SCHEDULE</div>
+                                <div onclick="dropdownScroll(this)" arg="secretariat">SECRETARIAT</div>
+                                <div onclick="dropdownScroll(this)" arg="tutorials">TUTORIALS</div>
+                              </div>
+                              </div>
                           </li>
                         </a>
                       </div>
@@ -204,7 +230,7 @@ http://www.tooplate.com/view/2090-kinetic
                 <!-- Footer -->
               </div>
               <div class="page" id="p2">
-                <li class="icon fa fa-user">
+                <li class="form-icon fa fa-user">
                   <span class="title">Registration Form</span>
                 </li>
 
@@ -707,7 +733,7 @@ http://www.tooplate.com/view/2090-kinetic
                 <!-- Footer -->
               </div>
               <div class="page" id="p5">
-                <li class="icon fa fa-info-circle">
+                <li id="about_about" class="icon fa fa-info-circle">
                   <span class="title">ABOUT NITMUN</span>
                   <div class="container">
                     <p class="about_nitmun_text">NITMUN is a forum convened by the members of the Literary Circle for
@@ -727,7 +753,7 @@ http://www.tooplate.com/view/2090-kinetic
                 </li>
 
 
-                <li class="icon fa fa-users">
+                <li id="about_committes" class="icon fa fa-users">
                   <span class="title">Committees</span>
                   <div class="container">
                     <div class="row">
@@ -788,7 +814,7 @@ http://www.tooplate.com/view/2090-kinetic
                     </div>
 
                 </li>
-                <li class="icon fa fa-calendar">
+                <li id="about_schedule" class="icon fa fa-calendar">
                   <span class="title">Schedule</span>
 
                   <ul class="timeline">
@@ -967,7 +993,7 @@ http://www.tooplate.com/view/2090-kinetic
                     </li>
                   </ul>
                 </li>
-                <li class="icon fa fa-gavel">
+                <li id="about_secretariat" class="icon fa fa-gavel">
                   <span class="title">Secretariat</span>
                   <div class="container" align="center">
                     <div class="row">
@@ -1131,7 +1157,7 @@ http://www.tooplate.com/view/2090-kinetic
                     </div>
                   </div>
                 </li>
-                <li class="icon fa fa-desktop"><span class="title">Tutorials</span>
+                <li id="about_tutorials" class="icon fa fa-desktop"><span class="title">Tutorials</span>
                   <div class="container">
                     <div class="row videos_container">
                       <div class="col-lg-6 video_left_container">
