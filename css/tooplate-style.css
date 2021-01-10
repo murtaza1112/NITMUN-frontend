@@ -1519,21 +1519,14 @@ body.lb-disable-scrolling {
   animation: moveLeft 1s ease-out forwards;
 }
 .direction.direction-l {
-  /* animation: moveLeft 5s ease-out; */
-  /* left: 150%; */
-  transform: translateX(-150%);
-  /* z-index: 10; */
-  /* color:red; */
+  transform: translateX(-250%);
 }
 .direction.direction-r {
-  /* animation: moveRight 5s ease-out; */
-  /* right: 150%; */
-  transform: translateX(150%);
-  /* color:red; */
+  transform: translateX(250%);
 }
 @keyframes moveRight {
   0% {
-    transform: translateX(-150%);
+    transform: translateX(-250%);
   }
   100% {
     transform: translateX(0%);
@@ -1542,7 +1535,7 @@ body.lb-disable-scrolling {
 
 @keyframes moveLeft {
   0% {
-    transform: translateX(150%);
+    transform: translateX(250%);
   }
   100% {
     transform: translateX(0%);

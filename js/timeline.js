@@ -31,7 +31,7 @@
     for (var i = 0; i < items.length; i++) {
       if (isElementInViewport(items[i])) {
         // console.log(`Element ${i + 1} is in viewport.`);
-        console.log(items[i]);
+        // console.log(items[i]);
         if (items[i].classList.contains("direction-r"))
           items[i].classList.add("moveLeftAnimation");
         else items[i].classList.add("moveRightAnimation");
@@ -46,6 +46,10 @@
   scheduleLink.addEventListener("click", callbackFunc);
   $(window).on("touchmove", callbackFunc);
 })();
+
+$(window).on("load", function () {
+  console.log("Loading....")
+});
 
 var ini = 0;
 const overLay = document.querySelector(".overlay");
@@ -63,7 +67,7 @@ function closeNav() {
 
 function OpenCloseNav() {
   ini ^= 1;
-  console.log(ini);
+  // console.log(ini);
   if (ini) openNav();
   else closeNav();
   // change hamburger icon
@@ -71,7 +75,7 @@ function OpenCloseNav() {
 }
 
 $("#nav-icon1,.remove_on_click").click(function () {
-  console.log("Hamburger has to change.");
+  // console.log("Hamburger has to change.");
   // $("#nav-icon1").toggleClass("open");
 });
 
@@ -85,7 +89,7 @@ var urls = [
 ];
 var youtubeVideo = document.querySelector(".ytvideo");
 function videoSwitch(Val) {
-  console.log(youtubeVideo);
+  // console.log(youtubeVideo);
   youtubeVideo.src = urls[Val];
   // console.log(videoCards[Val]);
 }
@@ -125,7 +129,7 @@ function changePreference(calledSelectTag) {
 
   const myNode = preferenceOptions[id];
 
-  console.log(calledSelectTag, value, id);
+  // console.log(calledSelectTag, value, id);
 
   while (myNode.firstChild) {
     // console.log(myNode)
@@ -165,9 +169,9 @@ const aboutUs = document.querySelector("#p5");
 
 // hardcoded values
 function dropdownScroll(event) {
-  console.log(event);
+  // console.log(event);
   var calledTag = event.getAttribute("arg");
-  console.log(calledTag);
+  // console.log(calledTag);
   var height = 0;
 
   if (window.screen.width < 425) {
@@ -190,13 +194,13 @@ function dropdownScroll(event) {
     else if (calledTag === "tutorials") height = 4920;
   }
 
-  console.log(height);
+  // console.log(height);
 
   aboutUs.scrollTo({ top: height, behavior: "smooth" });
 }
 
 function addOrRemoveTag(element) {
-  console.log(element);
+  // console.log(element);
 }
 
 $(".click_text").click(() => {
