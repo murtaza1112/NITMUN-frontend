@@ -12,7 +12,7 @@ body {
 
 p {
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 23px;
 }
@@ -675,10 +675,9 @@ a {
 }
 
 #p4 .right-info {
-  background-color: #fff;
   padding: 20px;
-  color: #343434;
-  text-align: left;
+  color: #ffffff;
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -1948,9 +1947,10 @@ footer i:hover {
 
 /* mobile dropdown */
 
-.my-mobile-drop .my-mobile-dropdown-content {
+.my-mobile-drop .my_mobile_dropdown_content {
     display: none;
     position: relative;
+    padding: 0 5px;
 }
 
 .my-mobile-drop .drop-value {
@@ -1974,3 +1974,72 @@ footer i:hover {
 }
 
 
+/* about_us page */
+
+.text-about-us {
+  text-align: center;
+  margin-bottom: 40px;
+}
+#p1 .title,
+#p2 .title,
+#p3 .title,
+#p4 .title,
+#p5 .title {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 60px;
+  text-shadow: 1px 1px 0px #797878;
+}
+
+#p4 .title {
+  text-align: center;
+}
+.icon_about_us {
+  font-size: 60px;
+  justify-content: center;
+  display: flex;
+}
+.about_nitmun_title {
+  margin-top: 60px;
+}
+
+@media (min-width: 992px) {
+  #p4 .uniquedivp4 h3 {
+    font-size: 144px;
+  }
+}
+
+@media (min-width: 768px) {
+  #p4 .uniquedivp4 h3 {
+    font-size: 109px;
+  }
+}
+
+@media (min-width: 546px) {
+  #p4 .uniquedivp4 h3 {
+    font-size: 80px;
+  }
+}
+
+.about_href {
+  color: #231c1c;
+  font-weight: 700;
+}
+
+.about_href:hover{
+  color: rgb(240, 235, 235);
+}
+
+.p-4 {
+    color: #d4d4d4;
+}
+
+.number_padding{
+  padding-left: 82px;
+}
+
+.footer_background{
+  background-color: rgba(48, 51, 60, 1);
+}
