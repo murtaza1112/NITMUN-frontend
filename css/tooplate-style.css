@@ -1735,12 +1735,12 @@ body.lb-disable-scrolling {
 }
 
 #p2 .form-control {
-  background: transparent;
+  background: black;
   border: none;
   border-bottom: 2px solid #635e5e;
   padding: 10px;
   font-size: 17px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: 450;
 }
 
