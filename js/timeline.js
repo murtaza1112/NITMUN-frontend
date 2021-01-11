@@ -160,25 +160,35 @@ preferenceSix.addEventListener("change", changePreference(preferenceSix));
 const aboutUs = document.querySelector("#p5");
 
 function dropdownScroll(event) {
-  console.log(event);
+  // console.log(event);
   var calledTag = event.getAttribute("arg");
-  console.log(calledTag)
+  // console.log(calledTag);
   var height = 0;
-  if(calledTag==="about")
-  height = 0;
-  else if(calledTag==="committees")
-  height = 590;
-  else if(calledTag==="schedule")
-  height = 2080;
-  else if(calledTag==="secretariat")
-  height = 3800;
-  else if(calledTag==="tutorials")
-  height = 4920;
-  console.log(height);
+
+  if (window.screen.width < 425) {
+    if (calledTag === "about") height = 0;
+    else if (calledTag === "committees") height = 1090;
+    else if (calledTag === "secretariat") height = 3100;
+    else if (calledTag === "tutorials") height = 4600;
+  } else if (window.screen.width < 760) {
+    if (calledTag === "about") height = 0;
+    else if (calledTag === "committees") height = 790;
+    else if (calledTag === "secretariat") height = 2800;
+    else if (calledTag === "tutorials") height = 4300;
+  } else {
+    if (calledTag === "about") height = 0;
+    else if (calledTag === "committees") height = 590;
+    else if (calledTag === "secretariat") height = 1800;
+    else if (calledTag === "tutorials") height = 2750;
+  }
+
+  // console.log(height);
 
   aboutUs.scrollTo({ top: height, behavior: "smooth" });
 }
 
-function addOrRemoveTag(element) {
-  console.log(element);
-}
+$(".click_text").click(() => {
+  if ($(".my_mobile_dropdown_content").is(":hidden"))
+    $(".my_mobile_dropdown_content").slideDown(1900);
+  else $(".my_mobile_dropdown_content").slideUp(1900);
+});

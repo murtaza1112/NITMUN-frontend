@@ -721,6 +721,7 @@ a {
 }
 #p5 .project-item img {
   transition: transform 0.2s;
+  height: 225px;
 }
 
 #p5 .project-item img:hover {
@@ -1962,6 +1963,10 @@ footer i:hover {
 .my-mobile-drop .drop-value:hover {
   background-color: #31333c;
   color: white;
+}
+
+.my-mobile-drop .mobile_value:hover {
+    border-bottom: #ffffff 1px solid;
 }
 
 .mydropdown .fa-caret-down {

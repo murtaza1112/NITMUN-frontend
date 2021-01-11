@@ -80,7 +80,6 @@ http://www.tooplate.com/view/2090-kinetic
                       <div class="arrow-up"></div>
                       <div class="drop-value" onclick="dropdownScroll(this)" arg="about">ABOUT</div>
                       <div class="drop-value" onclick="dropdownScroll(this)" arg="committees">COMMITTEES</div>
-                      <div class="drop-value" onclick="dropdownScroll(this)" arg="schedule">SCHEDULE</div>
                       <div class="drop-value" onclick="dropdownScroll(this)" arg="secretariat">SECRETARIAT</div>
                       <div class="drop-value" onclick="dropdownScroll(this)" arg="tutorials">TUTORIALS</div>
                     </div>
@@ -118,19 +117,17 @@ http://www.tooplate.com/view/2090-kinetic
                       </div>
                       <div>
                         <a href="#t5">
-                          <li class="icon remove_on_click icon_padding" id="schedule">
-                             <div class="my-mobile-drop" onclick="addOrRemoveTag(my_mobile_dropdown_content)">
-                                <span>
+                          <li class="icon remove_on_click icon_padding">
+                             <div class="my-mobile-drop">
+                                <span class="click_text">
                               <span class="my-mobile_dropdown">ABOUT NITMUN</span>
                               <i class="fa fa-caret-down"></i>
                               </span>
-                              <div class="my_mobile_dropdown_content">
-                                <div class="arrow-up"></div>
-                                <div onclick="dropdownScroll(this)" arg="about">ABOUT</div>
-                                <div onclick="dropdownScroll(this)" arg="committees">COMMITTEES</div>
-                                <div onclick="dropdownScroll(this)" arg="schedule">SCHEDULE</div>
-                                <div onclick="dropdownScroll(this)" arg="secretariat">SECRETARIAT</div>
-                                <div onclick="dropdownScroll(this)" arg="tutorials">TUTORIALS</div>
+                              <div class="my_mobile_dropdown_content" onclick="OpenCloseNav()">
+                                <div onclick="dropdownScroll(this)" arg="about"><span class="mobile_value" >ABOUT</span></div>
+                                <div onclick="dropdownScroll(this)" arg="committees"><span class="mobile_value" >COMMITTEES</span></div>
+                                <div onclick="dropdownScroll(this)" arg="secretariat"><span class="mobile_value" >SECRETARIAT</span></div>
+                                <div onclick="dropdownScroll(this)" arg="tutorials"><span class="mobile_value">TUTORIALS</span></div>
                               </div>
                               </div>
                           </li>
@@ -1030,9 +1027,6 @@ http://www.tooplate.com/view/2090-kinetic
   </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script>
-    AOS.init();
-  </script>
   <script>
     window.jQuery ||
       document.write(
