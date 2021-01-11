@@ -242,6 +242,7 @@
     // Position Lightbox
     var top  = $window.scrollTop() + this.options.positionFromTop;
     var left = $window.scrollLeft();
+    console.log(this);
     this.$lightbox.css({
       top: top + 'px',
       left: left + 'px'
@@ -507,5 +508,20 @@
   return new Lightbox();
 }));
 
+
+(function ($) {
+	/**
+   * Countdown
+   */
+	$('.countdown__module').each(function () {
+		var self = $(this),
+			    _date = self.attr('data-date'),
+			    _strf = self.html();
+		self.countdown(_date, function (event) {
+			self.html(event.strftime(_strf));
+		}).removeClass("hide");
+	});
+	
+})(jQuery);
 
 
