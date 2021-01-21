@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
   $name = $_POST['Name'];
   $email = $_POST['Email'];
   $phonenumber = $_POST['PhoneNumber'];
-  $college = $_POST['Name'];
+  $college = $_POST['College'];
   $comm1 = $_POST['Comm1'];
   $cp1 = $_POST['Country/Party1'];
   $comm2 = $_POST['Comm2'];
@@ -40,13 +40,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
 	//$statement->bind_param('sssssssssss', $name, $email, $mobile, $phonenumber, $college, $comm1, $cp1, $comm2, $cp2, $comm3, $cp3, $phonenumber, $pe);
   //$statement->execute();
 
-  
+
   //bind values and execute insert query
 
 	if($statement->execute()){
-		print "Hello " . $name . "!, your details has been saved!";
-	}else{
+		print "Hello " . $name . "!, your details has been saved! You will be redirected soon.";
+	}
+	else{
 		print $mysqli->error; //show mysql error if any
 	}
 }
+
+//sleep(5);
+header( "Refresh:5; url=https://www.nitmun.lcnitd.co.in/", true, 303);
+//header("Location:https://www.nitmun.lcnitd.co.in/");
+
+
+
 ?>

@@ -124,10 +124,11 @@ http://www.tooplate.com/view/2090-kinetic
                               <i class="fa fa-caret-down"></i>
                               </span>
                               <div class="my_mobile_dropdown_content" onclick="OpenCloseNav()">
-                                <div onclick="dropdownScroll(this)" arg="about"><span class="mobile_value" >ABOUT</span></div>
-                                <div onclick="dropdownScroll(this)" arg="committees"><span class="mobile_value" >COMMITTEES</span></div>
-                                <div onclick="dropdownScroll(this)" arg="secretariat"><span class="mobile_value" >SECRETARIAT</span></div>
-                                <div onclick="dropdownScroll(this)" arg="tutorials"><span class="mobile_value">TUTORIALS</span></div>
+                                <div class="arrow-up"></div>
+                                <div onclick="dropdownScroll(this)" arg="about"><span class="mobile_value" >ABOUT</div>
+                                <div onclick="dropdownScroll(this)" arg="committees"><span class="mobile_value" >COMMITTEES</div>
+                                <div onclick="dropdownScroll(this)" arg="secretariat"><span class="mobile_value" >SECRETARIAT</div>
+                                <div onclick="dropdownScroll(this)" arg="tutorials"><span class="mobile_value" >TUTORIALS</div>
                               </div>
                               </div>
                           </li>
@@ -188,14 +189,14 @@ http://www.tooplate.com/view/2090-kinetic
                     <!--Grid row-->
                     <div class="row">
                       <!--Grid column-->
-                      <div class="col-sm-6 col-md-6 col-lg-6 mb-4 mb-md-0">
+                      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                         <h5 class="text-uppercase">Our Headquarters: </h5>
                         <p>
                           NIT Durgapur, A-Zone, Durgapur, West Bengal 713209.</p>
                                 <p class="contact-address" style="font-family: 'Spectral', serif;font-size:16px;">
                                     Contact Us : +91 7980551646 <br>
-                                    <span class="number_padding">+91 9830372570</span><br>
-                                    Write To Us : lcnitd@gmail.com
+                                                 +91 9830372570 <br>
+                                    Write To Us : lc.nitd@gmail.com
                                 </p>
                       </div>
                       <!--Grid column-->
@@ -252,25 +253,25 @@ http://www.tooplate.com/view/2090-kinetic
                           <div class="form-group">
                             <label class="form-label" for="exampleFormControlInput1">Name</label>
                             <input type="text" name="Name" class="form-control shadow-none" id="exampleFormControlInput1"
-                              placeholder="Name">
+                              placeholder="Name" required>
                           </div>
 
                           <div class="form-group">
                             <label class="form-label" for="exampleFormControlInput1">Email</label>
                             <input type="email" name="Email" class="form-control shadow-none" id="exampleFormControlInput1"
-                              placeholder="Email">
+                              placeholder="Email" required>
                           </div>
 
                           <div class="form-group">
                             <label class="form-label" for="exampleFormControlInput1">Phone Number</label>
                             <input type="text" name="PhoneNumber" class="form-control shadow-none" id="exampleFormControlInput1"
-                              placeholder="Phone Number">
+                              placeholder="Phone Number" required>
                           </div>
 
                           <div class="form-group">
-                            <label class="form-label" for="exampleFormControlInput1">College</label>
+                            <label class="form-label" for="exampleFormControlInput1">College/School</label>
                             <input type="text" name="College" class="form-control shadow-none" id="exampleFormControlInput1"
-                              placeholder="College">
+                              placeholder="College/School" required>
                           </div>
 
                           <div class="form-text">
@@ -344,29 +345,28 @@ http://www.tooplate.com/view/2090-kinetic
                       </div>
                       <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
 
-                        <form class="outside_form">
-                          <div class="form-group action="insertip.php" method="POST"">
+                        <form class="outside_form" action="insertip.php" method="POST">
+                          <div class="form-group">
                             <label class="form-label" for="exampleFormControlInput1">Name</label>
-                            <input name="Name" type="text" class="form-control shadow-none" id="exampleFormControlInput1"
-                              placeholder="Name">
+                            <input name="Name" type="text" class="form-control shadow-none" id="exampleFormControlInput1"placeholder="Name" required>
                           </div>
 
                           <div class="form-group">
                             <label class="form-label" for="exampleFormControlInput1">Email</label>
                             <input name="Email" type="email" class="form-control shadow-none" id="exampleFormControlInput1"
-                              placeholder="Email">
+                              placeholder="Email" required>
                           </div>
 
                           <div class="form-group">
                             <label class="form-label" for="exampleFormControlInput1">Phone Number</label>
                             <input name="PhoneNumber" type="text" class="form-control shadow-none" id="exampleFormControlInput1"
-                              placeholder="Phone Number">
+                              placeholder="PhoneNumber" required>
                           </div>
 
                           <div class="form-group">
-                            <label class="form-label" for="exampleFormControlInput1">College</label>
+                            <label class="form-label" for="exampleFormControlInput1">College/School</label>
                             <input name="College" type="text" class="form-control shadow-none" id="exampleFormControlInput1"
-                              placeholder="College/School">
+                              placeholder="College/School" required>
                           </div>
 
                           <div class="form-text">
@@ -428,7 +428,7 @@ http://www.tooplate.com/view/2090-kinetic
 
                           <div class="form-group">
                             <label class="form-label previous_nitmun" for="exampleFormControlTextarea1">Previous Experiences</label>
-                            <textarea class="form-control shadow-none" placeholder="Previous Experiences" id="exampleFormControlTextarea1"></textarea>
+                            <textarea name="PreviousExperiences" class="form-control shadow-none" placeholder="PreviousExperiences" id="exampleFormControlTextarea1"></textarea>
                           </div>
 
                           <button type="submit" class="submit-button btn-block submit_button">Submit</button>
@@ -445,20 +445,20 @@ http://www.tooplate.com/view/2090-kinetic
                     <!--Grid row-->
                     <div class="row">
                       <!--Grid column-->
-                      <div class="col-sm-6 col-md-6 col-lg-6 mb-4 mb-md-0">
+                      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                         <h5 class="text-uppercase">Our Headquarters: </h5>
                         <p>
                           NIT Durgapur, A-Zone, Durgapur, West Bengal 713209.</p>
                                 <p class="contact-address" style="font-family: 'Spectral', serif;font-size:16px;">
                                     Contact Us : +91 7980551646 <br>
-                                    <span class="number_padding">+91 9830372570</span><br>
-                                    Write To Us : lcnitd@gmail.com
+                                          <span class="number_padding">+91 9830372570</span><br>
+                                    Write To Us : lc.nitd@gmail.com
                                 </p>
                       </div>
                       <!--Grid column-->
 
                       <!--Grid column-->
-                      <div class="col-sm-6 col-md-6 col-lg-6 -lg-6 mb-4 mb-md-0">
+                      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                         <h5 class="text-uppercase">Find Us At:</h5>
 
                         <ol class="social-icons">
@@ -569,15 +569,15 @@ http://www.tooplate.com/view/2090-kinetic
                         <p>
                           NIT Durgapur, A-Zone, Durgapur, West Bengal 713209.</p>
                                 <p class="contact-address" style="font-family: 'Spectral', serif;font-size:16px;">
-                                    Contact Us : +91 7980551646 <br>
-                                    <span class="number_padding">+91 9830372570</span><br>
-                                    Write To Us : lcnitd@gmail.com
+                                  Contact Us : +91 7980551646 <br>
+                                  <span class="number_padding">+91 9830372570</span><br>
+                                  Write To Us : lc.nitd@gmail.com
                                 </p>
                       </div>
                       <!--Grid column-->
 
                       <!--Grid column-->
-                      <div class="col-sm-6 col-md-6 col-lg-6 -lg-6 mb-4 mb-md-0">
+                      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                         <h5 class="text-uppercase">Find Us At:</h5>
 
                         <ol class="social-icons">
@@ -605,8 +605,8 @@ http://www.tooplate.com/view/2090-kinetic
               </div>
               <div class="page" id="p4">
                 <div class="container uniquedivp4">
-                  <span class="title about_nitmun_title"><i class="fa fa-user icon_about_us"></i>ABOUT US</span>
-                  <p class="text-about-us">The Literary Circle is the club in NIT Durgapur, which
+  <span class="title about_nitmun_title"><i class="fa fa-user icon_about_us"></i>ABOUT US</span>
+  <p class="text-about-us">The Literary Circle is the club in NIT Durgapur, which
                     gives the college an extra dimension of creative expression in the midst of technical unilateralism.
                     The colours of the imaginative faculties are meant to provide the college an experience and
                     opportunity transcending the ordinary and mundane.
@@ -624,16 +624,16 @@ http://www.tooplate.com/view/2090-kinetic
                     racking your brains till you solve a mystery. Of intellectual conversations and jubilant laughter.
                     Or the emotion. Of the nostalgia and love that will become a part of you in college. <br><br>
                     So be it NIT Durgapur's official Model United Nations, NITMUN.
-                    Or the myriad of proudly non-technical, cultural events at Verve, or the themed Prom associated
+                    Or the myriad of pro udly non-technical, cultural events at Verve, or the themed Prom associated
                     with it.
                     Or Humans Of NIT Durgapur, highlighting the greatness and sorrow, in equal measure, in all of us.
                     Or the YearBook, which serves as a testament to the roller-coaster which our college has been for
                     all our beloved final years.
                     The Literary Circle wishes to be the custodian of all things innately dear, and simply human.
                   </p>
-                  <h4 class="text-center">TO BE</h4>
-                  <h3 class="text-center">CONTINUED</h3><br>
-                  <h2 class="text-center">P.S. - JOIN US AT NITMUN TO KNOW WHAT WE TRULY DO &hearts;</h2>
+                 <h4 class="text-center">TO BE</h4>
+                 <h3 class="text-center">CONTINUED</h3><br>
+                 <h2 class="text-center">P.S. - JOIN US AT NITMUN TO KNOW WHAT WE TRULY DO &hearts;</h2>
                 </div>
                 <li class="icon fa fa-phone">
                   <span class="title">Contact Us</span>
@@ -663,20 +663,20 @@ http://www.tooplate.com/view/2090-kinetic
                     <!--Grid row-->
                     <div class="row">
                       <!--Grid column-->
-                      <div class="col-sm-6 col-md-6 col-lg-6 mb-4 mb-md-0">
+                      <div class="col-lsm-6 col-md-6 col-lg-6 mb-4 mb-md-0">
                         <h5 class="text-uppercase">Our Headquarters: </h5>
                         <p>
                           NIT Durgapur, A-Zone, Durgapur, West Bengal 713209.</p>
                                 <p class="contact-address" style="font-family: 'Spectral', serif;font-size:16px;">
-                                    Contact Us : +91 7980551646 <br>
-                                    <span class="number_padding">+91 9830372570</span><br>
-                                    Write To Us : lcnitd@gmail.com
+                                  Contact Us : +91 7980551646 <br>
+                                  <span class="number_padding">+91 9830372570</span><br>
+                                  Write To Us : lcnitd@gmail.com
                                 </p>
                       </div>
                       <!--Grid column-->
 
                       <!--Grid column-->
-                      <div class="col-sm-6 col-md-6 col-lg-6 -lg-6 mb-4 mb-md-0">
+                        <div class="col-sm-6 col-md-6 col-lg-6 -lg-6 mb-4 mb-md-0">
                         <h5 class="text-uppercase">Find Us At:</h5>
 
                         <ol class="social-icons">
@@ -737,7 +737,7 @@ http://www.tooplate.com/view/2090-kinetic
                           <a target="_blank" href="sg/UNGA_SG.pdf">Study Guide</a>
                         </div>
                         <div class="primary-button" class="col-md-2">
-                          <a htarget="_blank" ref="sg/UNGA_PM.pdf">Portfolio Matrix</a>
+                          <a target="_blank" href="sg/UNGA_PM.pdf">Portfolio Matrix</a>
                         </div>&nbsp;
                       </div>
                       <div class="col-md-6">
@@ -837,43 +837,55 @@ http://www.tooplate.com/view/2090-kinetic
                     <div class="row">
                       <div class="col-md-1"></div>
                       <div class="col-md-5">
-
                         <div class="ih-item circle colored effect3 right_to_left">
                           <div id="hover-link" style="cursor:pointer ;">
                             <div class="img"><img src="img/secretariat/Mohit1.jpg" alt="img"></div>
                             <div class="info">
                               <h3>Mohit Agarwal</h3>
                               <p>Under Secretary General</p>
-
-
-
                             </div>
                           </div>
                         </div>
-
                       </div>&nbsp;
                       <div class="col-md-5">
-
                         <div class="ih-item circle colored effect3 right_to_left">
                           <div id="hover-link" style="cursor:pointer ;">
                             <div class="img"><img src="img/secretariat/Chetan.jpg" alt="img"></div>
                             <div class="info">
                               <h3>Chetan Gupta</h3>
-                              <p>Under Sceretary General</p>
-
-
-
+                              <p>Under Secretary General</p>
                             </div>
                           </div>
                         </div>
-
                       </div>
                     </div>
                     <br>
                     <div class="row">
                       <div class="col-md-1"></div>
-
+                      <div class="col-md-5">
+                        <div class="ih-item circle colored effect3 right_to_left">
+                          <div id="hover-link" style="cursor:pointer ;">
+                            <div class="img"><img src="img/secretariat/shrimoyee.png" alt="img"></div>
+                            <div class="info">
+                              <h3>Shrimoyee Ghosh</h3>
+                              <p>Editor in Chief</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>&nbsp;
+                      <div class="col-md-5">
+                        <div class="ih-item circle colored effect3 right_to_left">
+                          <div id="hover-link" style="cursor:pointer ;">
+                            <div class="img"><img src="img/secretariat/pritish.jpg" alt="img"></div>
+                            <div class="info">
+                              <h3>Pritish Singhal</h3>
+                              <p>Editor in Chief</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                    <br>
                   </div>
                 </li>
                 <li id="about_tutorials" class="icon fa fa-desktop"><span class="title">Tutorials</span>
@@ -942,7 +954,7 @@ http://www.tooplate.com/view/2090-kinetic
                   </div>
                 </li>
                 <!-- Footer -->
-                <footer class="footer_background text-center text-lg-start">
+                <footer class="bg-dark text-center text-lg-start">
                   <!-- Grid container -->
                   <div class="container p-4">
                     <!--Grid row-->
@@ -953,9 +965,9 @@ http://www.tooplate.com/view/2090-kinetic
                         <p>
                           NIT Durgapur, A-Zone, Durgapur, West Bengal 713209.</p>
                                 <p class="contact-address" style="font-family: 'Spectral', serif;font-size:16px;">
-                                    Contact Us : +91 7980551646 <br>
-                                    <span class="number_padding">+91 9830372570</span><br>
-                                    Write To Us : lcnitd@gmail.com
+                                  Contact Us : +91 7980551646 <br>
+                                  <span class="number_padding">+91 9830372570</span><br>
+                                  Write To Us : lcnitd@gmail.com
                                 </p>
                       </div>
                       <!--Grid column-->

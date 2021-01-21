@@ -9,15 +9,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
 
   $name = $_POST['Name'];
   $email = $_POST['Email'];
-  $phonenumber = $_POST['Phone Number'];
-  $college = $_POST['Name'];
+  $phonenumber = $_POST['PhoneNumber'];
+  $college = $_POST['College'];
   $comm1 = $_POST['Comm1'];
   $cp1 = $_POST['Country/Party1'];
   $comm2 = $_POST['Comm2'];
   $cp2 = $_POST['Country/Party2'];
   $comm3 = $_POST['Comm3'];
   $cp3 = $_POST['Country/Party3'];
-  $pe = $_POST['Previous Experiences'];
+  $pe = $_POST['PreviousExperiences'];
 
 
 	//Open a new connection to the MySQL server
@@ -44,9 +44,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
   //bind values and execute insert query
 
 	if($statement->execute()){
-		print "Hello " . $name . "!, your details has been saved!";
+		print "Hello " . $name . "!, your details have been saved! You will be redirected in a few seconds.";
 	}else{
 		print $mysqli->error; //show mysql error if any
 	}
 }
+header( "Refresh:5; url=https://www.nitmun.lcnitd.co.in/", true, 303);
 ?>

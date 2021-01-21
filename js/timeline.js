@@ -93,9 +93,9 @@ function videoSwitch(Val) {
 // form JS
 
 var Options = {
-  'UNSC': ["United States", "United Kingdom", "France", "Russia", "China", "Etonia", "India", "Ireland", "Kenya", "Mexico", "Niger", "Norway", "Saint Vincent and the Grenadines", "Tunisia", "Vietnam", "UAE", "EGYPT", "SAUDI ARABIA", "SUDAN", "SYRIA", "TURKEY", "QATAR", "ITALY", "LIBYA", "IRAN"],
+  'UNSC': ["United States", "United Kingdom", "France", "Russia", "China", "Estonia", "India", "Ireland", "Kenya", "Mexico", "Niger", "Norway", "Saint Vincent and the Grenadines", "Tunisia", "Vietnam", "UAE", "EGYPT", "SAUDI ARABIA", "SUDAN", "SYRIA", "TURKEY", "QATAR", "ITALY", "LIBYA", "IRAN"],
   'AIPPM' : ["Narendra Modi", "Amit Shah", "JP Nadda", "Yogi Adityanath", "Nirmala Sitharaman", "Nitin Gadkari", "Rajnath Singh", "Ravishankar Prasad", "Mukul Roy", "Jamyang Tsering Namgyal", "Shashi Tharoor", "Sonia Gandhi", "Rahul Gandhi", "Dr. Manmohan Singh", "P Chidambaram", "Kapil Sibal", "Nitish Kumar", "Lalan Singh", "Asaduddin Owaisi", "Farooq Abdullah", "O Panneerselvam", "P. Raveendranath Kumar", "Raj Thackeray", "Mayawati", "Kunwar Danish Ali", "Mehbooba Mufti", "Uddhav Thackeray", "Sanjay Raut", "M. K. Stalin", "K. M. Kader Mohideen", "Lalu Prasad Yadav", "Tejashwi Yadav", "Akhilesh Yadav", "Mulayam Singh Yadav", "Mamata Banerjee", "Sukhendu Sekhar Ray", "Sitaram Yechury", "S Ramachandran Pillai", "Kanhaiya Kumar", "Arvind Kejriwal", "Bhagwant Mann", "Sharad Pawar", "Urkhao Gwra Brahma"],
-  'UNGA-DISEC': ["People’s Republic of China", "United States of America", "Republic of the Philippines", "Socialist Republic of Vietnam", "Malaysia", "Negara Brunei Darussalam", "Republic of Indonesia", "Kingdom of Thailand", "Kingdom of Cambodia", "Republic of Singapore", "Republic of India", "Japan", "Commonwealth of Australia", "United Kingdom of Great Britain and Northern Ireland", "Republic of France", "Russian Federation", "Federal Republic of Germany", "Kingdom of Belgium", "Syrian Arab    Republic", "Republic of Korea", "State of Israel", "Democratic People’s Republic of Korea", "Republic of Turkey", "Arab Republic of Egypt", "Islamic Republic of Iran", "Republic of Iraq", "Republic of the Sudan", "Ukraine", "Republic of Sierra Leone", "Swiss Confederation", "Kingdom of Spain", "Republic of South Sudan", "Kingdom of Sweden", "Republic of South Africa", "Republic of Tunisia", "Islamic Republic of Pakistan", "Republic of Bulgaria", "Hashemite Kingdom of Jordan", "United Mexican States (Mexico)", "Canada", "Republic of Cuba", "State of Kuwait”, ”Federative Republic of Brazil", "Lao People’s Democratic Republic", "Republic of the Union of Myanmar", "Libya", "Republic of Italy", "Republic of Poland", "New Zealand", "Republic of Lebanon", "Republic of Argentina”, ”Oriental Republic of Uruguay", "Republic of Zimbabwe", "People’s Republic of Bangladesh", "Federal Democratic Republic of Nepal", "Bolivarian Republic of Venezuela", "Republic of Serbia", "Republic of Belarus", "People’s Democratic Republic of Algeria", "Federal Democratic Republic of Ethiopia", "Republic of Djibouti", "Federal Republic of Somalia", "Hellenic Republic (Greece)", "United Arab Emirates", "Barbados", "Republic of Costa Rica", "Republic of Colombia", "Republic of Chile", "Republic of Kazakhstan", "Republic of Fiji", "Principality of Monaco", "Kingdom of Denmark", "State of Qatar", "Kingdom of Saudi Arabia", "Sultanate of Oman", "Hungary", "Romania", "United Republic of Tanzania", "Kingdom of Norway", "Kingdom of Morocco"],
+  'UNGA-DISEC': ["People’s Republic of China", "United States of America", "Republic of the Philippines", "Socialist Republic of Vietnam", "Malaysia", "Negara Brunei Darussalam", "Republic of Indonesia", "Kingdom of Thailand", "Kingdom of Cambodia", "Republic of Singapore", "Republic of India", "Japan", "Commonwealth of Australia", "United Kingdom of Great Britain and Northern Ireland", "Republic of France", "Russian Federation", "Federal Republic of Germany", "Kingdom of Belgium", "Syrian Arab    Republic", "Republic of Korea", "State of Israel", "Democratic People’s Republic of Korea", "Republic of Turkey", "Arab Republic of Egypt", "Islamic Republic of Iran", "Republic of Iraq", "Republic of the Sudan", "Ukraine", "Republic of Sierra Leone", "Swiss Confederation", "Kingdom of Spain", "Republic of South Sudan", "Kingdom of Sweden", "Republic of South Africa", "Republic of Tunisia", "Islamic Republic of Pakistan", "Republic of Bulgaria", "Hashemite Kingdom of Jordan", "United Mexican States (Mexico)", "Canada", "Republic of Cuba", "State of Kuwait", "Federative Republic of Brazil", "Lao People’s Democratic Republic", "Republic of the Union of Myanmar", "Libya", "Republic of Italy", "Republic of Poland", "New Zealand", "Republic of Lebanon", "Republic of Argentina", "Oriental Republic of Uruguay", "Republic of Zimbabwe", "People’s Republic of Bangladesh", "Federal Democratic Republic of Nepal", "Bolivarian Republic of Venezuela", "Republic of Serbia", "Republic of Belarus", "People’s Democratic Republic of Algeria", "Federal Democratic Republic of Ethiopia", "Republic of Djibouti", "Federal Republic of Somalia", "Hellenic Republic (Greece)", "United Arab Emirates", "Barbados", "Republic of Costa Rica", "Republic of Colombia", "Republic of Chile", "Republic of Kazakhstan", "Republic of Fiji", "Principality of Monaco", "Kingdom of Denmark", "State of Qatar", "Kingdom of Saudi Arabia", "Sultanate of Oman", "Hungary", "Romania", "United Republic of Tanzania", "Kingdom of Norway", "Kingdom of Morocco"],
   'UNGA-DISEC-IP': ["Associated Press", "Reuters", "United Nations Press"],
   'UNSC-IP': ["Associated Press", "Reuters", "Al Jazeera"],
   'AIPPM-IP': ["The Hindu", "The Hindustan Times", "The Times of India"],
@@ -133,7 +133,7 @@ function changePreference(calledSelectTag) {
   // console.log(`.label-${id + 1}`);
   var currentLabel = document.querySelector(`.label-${id + 1}`);
   if (value === "AIPPM") {
-    currentLabel.innerText = "Party";
+    currentLabel.innerText = "Portfolio";
   }
   else if(value === "AIPPM-IP" || value === "UNSC-IP" || value === "UNGA-DISEC-IP"){
     currentLabel.innerText = "News Agency";
@@ -160,32 +160,31 @@ preferenceSix.addEventListener("change", changePreference(preferenceSix));
 const aboutUs = document.querySelector("#p5");
 
 function dropdownScroll(event) {
-  // console.log(event);
+  //console.log(event);
   var calledTag = event.getAttribute("arg");
-  // console.log(calledTag);
-  var height = 0;
-
+  //console.log(calledTag)
   if (window.screen.width < 425) {
-    if (calledTag === "about") height = 0;
-    else if (calledTag === "committees") height = 1090;
-    else if (calledTag === "secretariat") height = 3100;
-    else if (calledTag === "tutorials") height = 4600;
-  } else if (window.screen.width < 760) {
-    if (calledTag === "about") height = 0;
-    else if (calledTag === "committees") height = 790;
-    else if (calledTag === "secretariat") height = 2800;
-    else if (calledTag === "tutorials") height = 4300;
-  } else {
-    if (calledTag === "about") height = 0;
-    else if (calledTag === "committees") height = 590;
-    else if (calledTag === "secretariat") height = 1800;
-    else if (calledTag === "tutorials") height = 2750;
-  }
+  if (calledTag === "about") height = 0;
+  else if (calledTag === "committees") height = 1090;
+  else if (calledTag === "secretariat") height = 3100;
+  else if (calledTag === "tutorials") height = 4600;
+} else if (window.screen.width < 760) {
+  if (calledTag === "about") height = 0;
+  else if (calledTag === "committees") height = 790;
+  else if (calledTag === "secretariat") height = 2800;
+  else if (calledTag === "tutorials") height = 4300;
+} else {
+  if (calledTag === "about") height = 0;
+  else if (calledTag === "committees") height = 590;
+  else if (calledTag === "secretariat") height = 1800;
+  else if (calledTag === "tutorials") height = 2750;
+}
 
-  // console.log(height);
+// console.log(height);
 
   aboutUs.scrollTo({ top: height, behavior: "smooth" });
 }
+
 
 $(".click_text").click(() => {
   if ($(".my_mobile_dropdown_content").is(":hidden"))
