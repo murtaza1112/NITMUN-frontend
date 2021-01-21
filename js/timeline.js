@@ -191,3 +191,4 @@ $(".click_text").click(() => {
     $(".my_mobile_dropdown_content").slideDown(1900);
   else $(".my_mobile_dropdown_content").slideUp(1900);
 });
+
