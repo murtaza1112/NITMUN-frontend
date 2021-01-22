@@ -2071,13 +2071,63 @@ footer i:hover {
   justify-content: center;
 }
 
-.sponsor_image{
+.sponsor_image {
   max-width: 400px;
 }
-#p6 .sponsor_title{
-    margin-bottom: 0px;
+#p6 .sponsor_title {
+  margin-bottom: 0px;
 }
 
-#p6 .icon_about_us{
-  font-size : 80px;
+#p6 .icon_about_us {
+  font-size: 80px;
 }
+
+.loader {
+  background-color: rgba(48, 51, 60, 1);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Spinner 1 starts here */
+.spinner1 {
+  align-items: center;
+  border: .3em solid transparent;
+  border-top: .3em solid white;
+  border-right: .3em solid white;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.spinnerMax {
+  animation: spinnerOne 3s linear infinite;
+  height: 5em;
+  width: 5em;
+}
+
+.spinnerMid {
+  animation: spinnerOne 5s linear infinite;
+  height: 3em;
+  width: 3em;
+}
+
+.spinnerMin {
+  animation: spinnerOne 5s linear infinite;
+  height: 2em;
+  width: 2em;
+}
+
+@keyframes spinnerOne {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+/* Spinner 1 ends here */
